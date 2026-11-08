@@ -1,5 +1,5 @@
-// live2d_path 参数建议使用绝对路径
-const live2d_path = "/live2d-widget/";
+// live2d_path 取自本脚本所在目录，站点部署在子路径下也能正确加载
+const live2d_path = new URL("./", document.currentScript.src).pathname;
 //const live2d_path = "/live2d-widget/";
 
 // 封装异步加载资源的方法

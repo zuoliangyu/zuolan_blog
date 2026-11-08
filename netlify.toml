@@ -1,0 +1,6 @@
+# Netlify 部署在根路径，站点按 GitHub Pages 的 /zuolan_blog/ 子路径构建：
+# 把带前缀的请求在服务端重写到根路径下的同名文件（GitHub Pages 会忽略本文件）。
+[[redirects]]
+  from = "/zuolan_blog/*"
+  to = "/:splat"
+  status = 200
